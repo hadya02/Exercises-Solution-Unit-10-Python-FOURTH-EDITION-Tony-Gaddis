@@ -1,0 +1,20 @@
+write a BankAccount class, stored in a
+module named bankaccount. Objects that are created from this class will simulate bank
+accounts, allowing us to have a starting balance, make deposits, make withdrawals, and
+get the current balance.
+
+class BankAccount:
+	def _ _init_ _(self, bal):
+		self._ _balance = bal
+	def deposit(self, amount):
+		self._ _balance += amount
+	def withdraw(self, amount):
+	if self._ _balance >= amount:
+		self._ _balance -= amount
+	else:
+		print('Error: Insufficient funds')
+
+	def get_balance(self):
+	return self._ _balance
+	
+	
